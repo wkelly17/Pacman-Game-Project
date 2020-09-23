@@ -1,0 +1,104 @@
+html, body {
+	margin: 10;
+	padding: 10;
+	max-width: 95vw;
+}
+
+.container {
+	width: max-content;
+	margin: 0 auto;
+}
+
+.grid {
+	width: 420px;
+	height: 420px;
+	border: solid 1px black;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+h1 {
+	color: red;
+}
+
+.grid div {
+	width: 15px;
+	height: 15px;
+
+}
+
+.pac-dot {
+	background-color: green;
+	border: 5px solid white;
+	box-sizing: border-box;
+}
+.wall {
+background-color: blue;
+}
+.power-pellet {
+background-color: green;
+border-radius: 50%;
+}
+
+.pacman {
+    background-color: orange;
+	/* border-radius: 7.5px; */
+	border: none;
+	clip-path: polygon(50% 0%, 100% 16%, 66% 44%, 100% 76%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+	/* transform: rotate(180deg); */
+}
+
+.blinky {
+	background: red;
+	border: none;
+	clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 100%, 69% 78%, 50% 100%, 26% 79%, 0 100%, 0% 35%, 20% 10%);
+	
+}
+.pinky {
+	background: pink;
+	border: none;
+	clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 100%, 69% 78%, 50% 100%, 26% 79%, 0 100%, 0% 35%, 20% 10%)
+}
+.inky {
+	background: aqua;
+	border: none;
+	clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 100%, 69% 78%, 50% 100%, 26% 79%, 0 100%, 0% 35%, 20% 10%)
+}
+.clyde {
+	background: orange;
+	border: none;
+	clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 100%, 69% 78%, 50% 100%, 26% 79%, 0 100%, 0% 35%, 20% 10%)
+}
+
+.scaredGhost {
+	background: rgb(70, 212, 248); 
+	border: none; 
+	animation: tremble;
+	animation-duration: .15s;
+}
+
+
+@keyframes tremble {
+		0%   { 
+			opacity: .8; 
+			clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 100%, 69% 78%, 50% 100%, 26% 79%, 0 100%, 0% 35%, 20% 10%)
+		}
+
+		50% {
+			opacity: .9;
+			clip-path: polygon(68% 3%, 88% 11%, 98% 30%, 100% 73%, 69% 100%, 46% 74%, 24% 100%, 0 78%, 14% 24%, 36% 8%);
+
+		}
+		100% { 
+			opacity: 1;
+			clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 100%, 69% 78%, 50% 100%, 26% 79%, 0 100%, 0% 35%, 20% 10%)
+		 }
+	  }
+
+/* .ghost-lair {
+
+}
+.empty{
+
+} */
+
